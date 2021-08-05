@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Hire me - Ilan Granot</title>
+    <meta name="description" content="My name is Ilan Granot and I am a Software Engineer.">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
+</head>
+<body>
+        <div id="secret-content">
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Credentials</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="password-form" class="needs-validation" novalidate>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Please enter password for entry:</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                </div>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<footer class="page-footer">
+    <div class="container">
+        <div class="links"><a href="index.html"><- Back</a></div>
+    </div>
+</footer>
+
+<script>
+    (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+            $('#exampleModal1').modal('show');
+            console.clear();
+            document.getElementById('password-form').addEventListener('submit', function(e) {
+                e.preventDefault();
+                document.getElementById('exampleInputPassword1').classList.remove('is-invalid');
+                if (document.getElementById('exampleInputPassword1').value == 'frankbutt'){
+                    document.getElementById('exampleInputPassword1').classList.remove('is-invalid');
+                    document.getElementById('exampleInputPassword1').classList.add('is-valid');
+                    console.log("PASSWORD OK");
+                    $('#exampleModal1').modal('hide');
+                    document.getElementById('secret-content').innerHTML = "<main class=\"page hire-me-page\">\n" +
+                        "    <section class=\"portfolio-block hire-me\">" +
+                        "<div class=\"container\">\n" +
+                        "                <div class=\"heading\">\n" +
+                        "                    <h2>TRANSCRIPT</h2>\n" +
+                        "                </div>\n" +
+                        "                <form>\n" +
+                        "                    <table class=\"table\">\n" +
+                        "                        <thead>\n" +
+                        "                        <tr>\n" +
+                        "                            <th scope=\"col\">#</th>\n" +
+                        "                            <th scope=\"col\">Class</th>\n" +
+                        "                            <th scope=\"col\">Grade</th>\n" +
+                        "                        </tr>\n" +
+                        "                        </thead>\n" +
+                        "                        <tbody>\n" +
+                        "                        <tr>\n" +
+                        "                            <th scope=\"row\">1</th>\n" +
+                        "                            <td>CS    49J    Programming in Java</td>\n" +
+                        "                            <td>A</td>\n" +
+                        "                        </tr>\n" +
+                        "                        <tr>\n" +
+                        "                            <th scope=\"row\">2</th>\n" +
+                        "                            <td>CS    147    Comp Architecture</td>\n" +
+                        "                            <td>A+</td>\n" +
+                        "                        </tr>\n" +
+                        "                        <tr>\n" +
+                        "                            <th scope=\"row\">3</th>\n" +
+                        "                            <td>MATH  161A   Appl Prob & Stats I</td>\n" +
+                        "                            <td>A</td>\n" +
+                        "                        </tr>\n" +
+                        "                        <tr>\n" +
+                        "                            <th scope=\"row\">4</th>\n" +
+                        "                            <td>PHIL  134    Computers, Ethics, S</td>\n" +
+                        "                            <td>A</td>\n" +
+                        "                        </tr>\n" +
+                        "                        <tr>\n" +
+                        "                            <th scope=\"row\">5</th>\n" +
+                        "                            <td>CS    100W   Writing Workshop</td>\n" +
+                        "                            <td>B</td>\n" +
+                        "                        </tr>\n" +
+                        "                        <tr>\n" +
+                        "                            <th scope=\"row\">6</th>\n" +
+                        "                            <td>ASTR  101    Modern Astronomy</td>\n" +
+                        "                            <td>A+</td>\n" +
+                        "                        </tr>\n" +
+                        "                        <tr>\n" +
+                        "                            <th scope=\"row\">7</th>\n" +
+                        "                            <td>CS    146    Data Struct & Alg</td>\n" +
+                        "                            <td>A</td>\n" +
+                        "                        </tr>\n" +
+                        "                        <tr>\n" +
+                        "                            <th scope=\"row\">8</th>\n" +
+                        "                            <td>CS    151    Object Orntd Dsgn</td>\n" +
+                        "                            <td>A</td>\n" +
+                        "                        </tr>\n" +
+                        "                        <tr>\n" +
+                        "                            <th scope=\"row\">9</th>\n" +
+                        "                            <td>CS    154    Formal Lang & Comput</td>\n" +
+                        "                            <td>A-</td>\n" +
+                        "                        </tr>\n" +
+                        "                        <tr>\n" +
+                        "                            <th scope=\"row\">10</th>\n" +
+                        "                            <td>PHIL  186    Prof & Bus Ethics</td>\n" +
+                        "                            <td>A</td>\n" +
+                        "                        </tr>\n" +
+                        "                        <tr>\n" +
+                        "                            <th scope=\"row\">#</th>\n" +
+                        "                            <td>SJSU TOTAL GPA</td>\n" +
+                        "                            <td>3.9</td>\n" +
+                        "                        </tr>\n" +
+                        "                        </tbody>\n" +
+                        "                    </table>\n" +
+                        "                </form>\n" +
+                        "            </div>" +
+                        "    </section>\n" +
+                        "</main>";
+                } else {
+                    document.getElementById('exampleInputPassword1').classList.remove('is-valid');
+                    document.getElementById('exampleInputPassword1').classList.add('is-invalid');
+                    console.log("PASSWORD ERROR");
+                }
+            });
+            setTimeout(function () {
+                console.log(".___.__                    ________                     __   \n" +
+                    "|   |  | _____    ____    /  _____/___________    _____/  |_ \n" +
+                    "|   |  | \\__  \\  /    \\  /   \\  __\\_  __ \\__  \\  /  _ \\   __\\\n" +
+                    "|   |  |__/ __ \\|   |  \\ \\    \\_\\  \\  | \\// __ \\(  <_> )  |  \n" +
+                    "|___|____(____  /___|  /  \\______  /__|  (____  /\\____/|__|  \n" +
+                    "              \\/     \\/          \\/           \\/             ");
+                console.log("What are you looking in here for?");
+            },1000);
+        }, false);
+    })();
+</script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
+<script src="assets/js/theme.js"></script>
+</body>
+</html>
